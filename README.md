@@ -28,7 +28,7 @@ STATUS 200 result {'ID': '0000'}
 ```
 If instead the attachment header is omitted, the result is
 ```shell
-$ curl -X POST -F 'attachment=@foo.bar;headers="ID:0000"' http://localhost:5000/process
+$ curl -X POST -F 'attachment=@foo.bar' http://localhost:5000/process
 STATUS 9999 ID not found
 ```
 For the meaning of the response status in this case, see next section.
