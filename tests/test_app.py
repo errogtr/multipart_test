@@ -3,7 +3,7 @@ from werkzeug.datastructures import MultiDict, FileStorage, Headers
 
 
 def test_app(client):
-    endpoint = "api/v1/process"
+    endpoint = "process"
     attachment_path = Path("foo.bar")
 
     data = MultiDict()

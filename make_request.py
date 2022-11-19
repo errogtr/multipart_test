@@ -11,4 +11,4 @@ if __name__ == "__main__":
                                 )
                  )
     response = requests.post(url=url, files=[test_file])
-    print(f"{response.status_code} {response.reason}\n{response.text}")
+    print(response.text)
