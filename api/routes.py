@@ -3,8 +3,8 @@ from flask import current_app, request, make_response
 
 @current_app.route("/process", methods=["POST"])
 def process_request_api():
-    files = request.files
-    headers = files.get("attachment").headers
+    attachment = request.files.get("attachment")
+    headers = attachment.headers
     try:
         my_header = next({k: v} for k, v in headers.items() if k == "ID")
         response = make_response(my_header)
