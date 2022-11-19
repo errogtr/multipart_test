@@ -1,7 +1,7 @@
 from flask import current_app, request, make_response
 
 
-@current_app.route("/api/v1/process", methods=["POST"])
+@current_app.route("/process", methods=["POST"])
 def process_request_api():
     files = request.files
     headers = files.get("attachment").headers
