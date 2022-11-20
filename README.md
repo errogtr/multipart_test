@@ -1,5 +1,5 @@
 ### Description
-This is a minimal working example of the Werkzeug issue <insert_url>.
+This is a minimal working example of the Werkzeug issue [#2549](https://github.com/pallets/werkzeug/issues/2549).
 
 It contains a Flask app which parses a multipart request containing an "attachment" file enriched with an "ID"
 custom header. The app returns `200` if the header is present and another status code otherwise.
@@ -45,4 +45,7 @@ FAILED tests/test_app.py::test_app - assert 9999 == 200
 The value `9999` is chosen to make sure that the test fails exactly
 because the custom headers is lost somewhere in the request handling by
 the mocked Flask client.
+
+If the Werkzeug source code is modified according to the fix proposal at [#2549](https://github.com/pallets/werkzeug/issues/2549),
+the test successful.
 
