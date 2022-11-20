@@ -1,7 +1,7 @@
 ### Description
 This is a minimal working example of the Werkzeug issue <insert_url>.
 
-It contains a Flask app which parses a multipart request containing an "attachment" file which is enriched with an "ID"
+It contains a Flask app which parses a multipart request containing an "attachment" file enriched with an "ID"
 custom header. The app returns `200` if the header is present and another status code otherwise.
 
 ### Setup
