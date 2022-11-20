@@ -36,9 +36,9 @@ For the meaning of the response status in this case, see next section.
 ### Integration test
 To run the unique integration test in the `tests` folder, run
 ```shell
-python3 -m pytest tests/
+python3 -m pytest tests
 ```
-The expected result is a successful result, while at the moment an assertion error is raised
+The test is expected to be successful, while at the moment an assertion error is raised
 ```shell
 FAILED tests/test_app.py::test_app - assert 9999 == 200
 ```
