@@ -4,6 +4,8 @@ This is a minimal working example of the Werkzeug issue [#2549](https://github.c
 It contains a Flask app which parses a multipart request containing an "attachment" file enriched with an "ID"
 custom header. The app returns `200` if the header is present and another status code otherwise.
 
+The Flask application factory is found in `api/__init__.py`, while the module processing the request is `api/routes.py`.
+
 ### Setup
 To create a minimal virtual environment run
 ```shell
